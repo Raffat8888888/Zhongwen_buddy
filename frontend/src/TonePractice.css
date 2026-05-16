@@ -1,0 +1,147 @@
+.tone-page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 28px 20px 40px;
+}
+
+.tone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.tone-header h2 {
+  margin: 0;
+}
+
+.tone-subtitle {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.tone-status {
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: var(--surface);
+  font-size: 13px;
+}
+
+.tone-card {
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+}
+
+.tone-target {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.hanzi {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.pinyin {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.meaning {
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+.tone-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.secondary-btn {
+  background: #4d6a92;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.secondary-btn:hover {
+  filter: brightness(1.05);
+}
+
+.ghost-btn {
+  background: transparent;
+  border: 1px solid var(--stroke);
+  color: inherit;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tone-error {
+  margin-top: 14px;
+  color: #b4362b;
+}
+
+.result-box {
+  margin-top: 14px;
+  border: 1px solid var(--stroke);
+  background: #f8fbff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: grid;
+  gap: 6px;
+}
+
+.tone-history {
+  margin-top: 18px;
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  padding: 18px;
+}
+
+.tone-history h3 {
+  margin: 0 0 12px 0;
+}
+
+.history-empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.history-list {
+  display: grid;
+  gap: 8px;
+}
+
+.history-item {
+  border: 1px solid var(--stroke);
+  border-radius: 10px;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .hanzi {
+    font-size: 60px;
+  }
+
+  .tone-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

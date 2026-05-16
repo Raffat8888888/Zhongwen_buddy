@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=ZCOOL+XiaoWei&display=swap");
+
+:root {
+  --bg: radial-gradient(circle at top left, #fff1d6 0%, #f7fff0 45%, #e8fff7 100%);
+  --surface: #ffffff;
+  --surface-muted: #fff6e2;
+  --ink: #1c1410;
+  --muted: #4f3d31;
+  --accent: #e23a1f;
+  --accent-2: #12a07f;
+  --stroke: #f0d7b5;
+  --shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.12);
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --font-sans: "Sora", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-serif: "ZCOOL XiaoWei", "Noto Serif SC", "STSong", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  letter-spacing: 0.3px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

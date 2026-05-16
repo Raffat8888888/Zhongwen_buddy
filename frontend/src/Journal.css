@@ -1,0 +1,95 @@
+.journal-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 22px 42px;
+}
+
+.journal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.journal-header h2 {
+  margin: 0 0 6px 0;
+}
+
+.journal-subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.journal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.journal-list {
+  display: grid;
+  gap: 14px;
+}
+
+.journal-empty {
+  border: 1px dashed var(--stroke);
+  border-radius: 14px;
+  padding: 16px;
+  color: var(--muted);
+  background: var(--surface);
+}
+
+.journal-card {
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.journal-meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.journal-note {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.ghost-btn {
+  background: transparent;
+  border: 1px solid var(--stroke);
+  color: inherit;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ghost-btn.small {
+  padding: 8px 10px;
+  width: fit-content;
+}
+
+.danger-btn {
+  background: #b4362b;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.danger-btn:hover {
+  background: #992f26;
+}
+
+@media (max-width: 700px) {
+  .journal-header {
+    flex-direction: column;
+  }
+}
